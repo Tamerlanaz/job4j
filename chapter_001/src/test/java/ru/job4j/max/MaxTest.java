@@ -11,21 +11,27 @@ import static org.junit.Assert.assertThat;
  */
 public class MaxTest {
     @Test
-    public void whenFirstLessSecond() {
+    public void  whenFirstLessSecondLessThird() {
         Max maxim = new Max();
-        int result = maxim.max(1, 2);
-        assertThat(result, is(2));
+        int result = maxim.max(1, 2, 3);
+        assertThat(result, is(3));
     }
     @Test
-    public void whenSecondLessFirst() {
+    public void whenSecondLessFirstLessThird() {
         Max maxim = new Max();
-        int result = maxim.max(12, 9);
+        int result = maxim.max(12, 9, 10);
         assertThat(result, is(12));
     }
     @Test
-    public void whenSecondEqualyFirst() {
+    public void whenFirstLessThirdLessSecond() {
         Max maxim = new Max();
-        int result = maxim.max(10, 10);
+        int result = maxim.max(12, 29, 5);
+        assertThat(result, is(29));
+    }
+    @Test
+    public void whenSecondEqualyFirstEqualyThird() {
+        Max maxim = new Max();
+        int result = maxim.max(10, 10, 10);
         assertThat(result, is(10));
     }
 }
