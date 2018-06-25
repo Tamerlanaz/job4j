@@ -9,15 +9,15 @@ public class Check {
      */
 
     public boolean mono(boolean[] data) {
-        boolean result = false;
+        boolean result = true;
         for (int index =0; index < data.length-1; index++) {
-            if (data [index]= data [++index]) {
-                result = true;
+            if (data [index]!= data [++index]) {
+                result = false;
             }
-            else{
+            /*else{
                 result = false;
                 break;
-            }
+            }*/
         }
         return result;
     }
