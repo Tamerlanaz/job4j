@@ -15,27 +15,27 @@ public class CalculatorTest {
         assertThat(result, is(expected));
     }
     @Test
-    public void whenAddOneMinusOneThenTwo(){
-        Calculator calc = new Calculator ();
+    public void whenAddOneMinusOneThenTwo() {
+        Calculator calc = new Calculator();
         calc.subtract(1D, 1D);
         double result = calc.getResult();
         double expected = 0D;
-        assertThat (result, is(expected));
+        assertThat(result, is(expected));
     }
     @Test
-    public void whenAddOneDivOneThenTwo(){
-        Calculator calc = new Calculator ();
+    public void whenAddOneDivOneThenTwo() {
+        Calculator calc = new Calculator();
         calc.div(1D, 1D);
         double result = calc.getResult();
         double expected = 1D;
-        assertThat (result, is(expected));
+        assertThat(result, is(expected));
     }
     @Test
-    public void whenAddOneMultipleOneThenTwo(){
-        Calculator calc = new Calculator ();
+    public void whenAddOneMultipleOneThenTwo() {
+        Calculator calc = new Calculator();
         calc.multiple(1D, 1D);
         double result = calc.getResult();
         double expected = 1D;
-        assertThat (result, is(expected));
+        assertThat(result, is(expected));
     }
 }
